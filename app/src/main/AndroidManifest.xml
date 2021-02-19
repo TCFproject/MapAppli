@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.eps.mapappli">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MapApplication"
         android:allowBackup="true"
@@ -10,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MapAppli">
+        <activity android:name=".ItemDetailActivity"></activity>
+        <activity android:name=".UneCategorieActiviy" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EpsiActivity"/>
+        <activity android:name=".EpsiActivity" />
         <activity android:name=".ListEtudiant" />
         <activity android:name=".CategoriesActivity" />
         <activity android:name=".EtudiantActivity" />

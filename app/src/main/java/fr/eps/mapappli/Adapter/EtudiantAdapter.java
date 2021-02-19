@@ -15,6 +15,7 @@ import fr.eps.mapappli.EtudiantActivity;
 import fr.eps.mapappli.ListEtudiant;
 import fr.eps.mapappli.R;
 import fr.eps.mapappli.obj.Etudiant;
+import fr.eps.mapappli.obj.Item;
 
 public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.ViewHolder> {
     private EpsiActivity activity;
