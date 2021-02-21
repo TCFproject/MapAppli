@@ -22,11 +22,13 @@ public class EtudiantActivity extends EpsiActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_etudiant);
-        setTitle(getIntent().getExtras().getString("Nom",""));
+        setTitle(getIntent().getExtras().getString("Nom","")+" "+getIntent().getExtras().getString("Prenom",""));
         showBack();
         TextView email = (TextView) findViewById(R.id.Email);
         email.setText(getIntent().getExtras().getString("Email",""));
         TextView group = (TextView) findViewById(R.id.GroupeNb);
         group.setText("Groupe "+ getIntent().getExtras().getInt("groupe"));
+        TextView link = (TextView) findViewById(R.id.link);
+        link.setText("https://www.epsi.fr/");
     }
 }
